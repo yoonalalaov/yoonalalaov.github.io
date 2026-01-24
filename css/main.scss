@@ -1,0 +1,220 @@
+#main {
+
+    display: block;
+    background: #ece8e2;
+
+    .main__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 100px 0;
+
+
+        .main__title {
+            font-size: 22px;
+            color: hsl(0 0% 43.5%);
+        }
+
+
+        .main__box {
+
+            width: 788px;
+
+            padding: 50px;
+            background: #fff;
+
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &.--wide {
+                width: 100%;
+            }
+
+
+        }
+    }
+
+
+    // --visual S
+    .--visual {
+
+        .main__box {
+
+            .box__txt {
+                font-size: 55px;
+                line-height: 1.2;
+
+                z-index: 2;
+
+                &.--left {
+                    margin-left: 50px;
+                }
+
+            }
+
+            .box__circle {
+                width: 60%;
+                height: 100%;
+                background: var(--yellow);
+
+                border-radius: 50%;
+
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translatey(-50%);
+
+                z-index: 1;
+            }
+            
+        }
+
+    }
+    // --visual E
+
+    // --resume S
+    .--resume {
+
+        .box__ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            & > li {
+                padding-bottom: 50px;
+
+                &:nth-of-type(1) {
+                    width: 55%;
+                }
+
+                &:nth-of-type(2) {
+                    width: 36%;
+                }
+
+                &.--wide {
+                    width: 100%;
+                }
+
+                & > strong {
+                    font-size: 18px;
+
+                    display: block;
+                    padding-bottom: .1em;
+                }
+
+                .ul__txt {
+
+                    .txt__circle {
+
+                    }
+
+                    dl {
+
+                        dt {
+
+                        }
+
+                        dd {
+
+                        }
+
+                    }
+                    
+
+                }
+
+                .ul__img {
+                    display: flex;
+
+                    li {
+                        width: 6%;
+
+                        &:not(:last-child) {
+                            margin-right: 20px;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+    // --resume E
+
+    // --projects S
+    .--projects {
+        padding-top: 0;
+
+        flex-direction: column;
+        align-items: center;
+        
+        .projects__letter {
+            max-width: 1800px;
+
+            position: sticky;
+            left: 0;
+            top: 0;
+
+            .swiper-wrapper {
+                transition-timing-function: linear !important;
+            }
+
+            .letter__swiper {
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+
+                font-size: 140px;
+
+                .swiper-slide {
+                    width: 10em;
+                    line-height: 1.1;
+                }
+
+
+                &.--02 {
+
+                    .swiper-slide {
+
+                        color: transparent;
+                        -webkit-text-stroke: 1.5px rgba(0,0,0,0.25);
+                        text-transform: uppercase;
+                        transition: color .3s ease;
+
+                        &:hover {
+                            color: #000;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        .main__container {
+
+            .main__box {
+
+                &:not(:last-child) {
+                    margin-bottom: 40px;
+                }
+
+            }
+
+        }
+
+    }
+    // --projects E
+
+}

@@ -1,0 +1,115 @@
+#main {
+  display: block;
+  background: #ece8e2;
+}
+#main .main__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+}
+#main .main__wrapper .main__title {
+  font-size: 22px;
+  color: hsl(0, 0%, 43.5%);
+}
+#main .main__wrapper .main__box {
+  width: 788px;
+  padding: 50px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#main .main__wrapper .main__box.--wide {
+  width: 100%;
+}
+#main .--visual .main__box .box__txt {
+  font-size: 55px;
+  line-height: 1.2;
+  z-index: 2;
+}
+#main .--visual .main__box .box__txt.--left {
+  margin-left: 50px;
+}
+#main .--visual .main__box .box__circle {
+  width: 60%;
+  height: 100%;
+  background: var(--yellow);
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translatey(-50%);
+  z-index: 1;
+}
+#main .--resume .box__ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#main .--resume .box__ul > li {
+  padding-bottom: 50px;
+}
+#main .--resume .box__ul > li:nth-of-type(1) {
+  width: 55%;
+}
+#main .--resume .box__ul > li:nth-of-type(2) {
+  width: 36%;
+}
+#main .--resume .box__ul > li.--wide {
+  width: 100%;
+}
+#main .--resume .box__ul > li > strong {
+  font-size: 18px;
+  display: block;
+  padding-bottom: 0.1em;
+}
+#main .--resume .box__ul > li .ul__img {
+  display: flex;
+}
+#main .--resume .box__ul > li .ul__img li {
+  width: 6%;
+}
+#main .--resume .box__ul > li .ul__img li:not(:last-child) {
+  margin-right: 20px;
+}
+#main .--resume .box__ul > li .ul__img li img {
+  width: 100%;
+}
+#main .--projects {
+  padding-top: 0;
+  flex-direction: column;
+  align-items: center;
+}
+#main .--projects .projects__letter {
+  max-width: 1800px;
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+#main .--projects .projects__letter .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+#main .--projects .projects__letter .letter__swiper {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 140px;
+}
+#main .--projects .projects__letter .letter__swiper .swiper-slide {
+  width: 10em;
+  line-height: 1.1;
+}
+#main .--projects .projects__letter .letter__swiper.--02 .swiper-slide {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+#main .--projects .projects__letter .letter__swiper.--02 .swiper-slide:hover {
+  color: #000;
+}
+#main .--projects .main__container .main__box:not(:last-child) {
+  margin-bottom: 40px;
+}/*# sourceMappingURL=main.css.map */

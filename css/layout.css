@@ -1,0 +1,52 @@
+:root {
+  --font-xl: 56px; /* Hero */
+  --font-lg: 32px; /* Section title */
+  --font-md: 18px; /* Body large */
+  --font-sm: 14px; /* Meta */
+  --red: rgb(244, 40, 0);
+  --green: rgb(0, 175, 63);
+  --blue: rgb(5, 111, 247);
+  --yellow: #FFFF02;
+  --yellow-high-contrast: #FFEF00;
+  --orange: #FF6100;
+  --orange2: #FF4D00;
+  --pink1: rgb(255, 145, 169);
+  --neon1: rgb(209, 255, 0);
+  --neon2: rgb(0, 243, 255);
+  --focus-ring: 2px solid var(--colors-focus);
+  --root-background: var(--colors-gray1);
+}
+
+.--blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.--fw-100 {
+  font-weight: 100;
+}
+
+.--fw-200 {
+  font-weight: 200;
+}
+
+.--fw-300 {
+  font-weight: 300;
+}
+
+.--fw-400 {
+  font-weight: 400;
+}
+
+.--fw-500 {
+  font-weight: 500;
+}
+
+.--fw-bold {
+  font-weight: bold;
+}/*# sourceMappingURL=layout.css.map */
