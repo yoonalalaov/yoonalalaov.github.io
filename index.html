@@ -2,10 +2,12 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>Yoona Park</title>
+  <title>Yoona Park Portfolio</title>
 
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/layout.css">
+  
+  <link rel="stylesheet" href="css/head.css">
   <link rel="stylesheet" href="css/main.css">
 
   <link rel="stylesheet" href="/js/swiper/11.1.3/swiper-bundle.min.css">
@@ -15,6 +17,7 @@
   <script src="/js/gsap/3.12.2/gsap.min.js"></script>
   <script src="/js/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
+
   <script src="/js/jquery-1.12.4.min.js"></script>
   <script src="/js/jquery-migrate-1.4.1.min.js"></script>
   <script src="/js/jquery.menu.js"></script>
@@ -22,7 +25,20 @@
   <script src="https://unpkg.com/@studio-freight/lenis"></script>
 </head>
 <body>
-  <h1 class="--blind">Yoona Park ㅇㅇㅇㅇ 깃 확인용 최종</h1>
+  <h1 class="--blind">Yoona Park — Web Publisher Portfolio</h1>
+  <header id="hd">
+    <h1 class="hd__logo --blind"><a href="/">Yoona PortFolio</a></h1>
+    <div class="hd__menu">
+      <ul>
+        <li><a href="javascript:goToEle('#visual')">Yoona</a></li>
+        <li><a href="javascript:goToEle('#projects')">Projects</a></li>
+        <li><a href="javascript:goToEle('#about')">About</a></li>
+        <li><a href="javascript:goToEle('#resume')">Resume</a></li>
+        <li><a href="javascript:goToEle('#contact')">Contact</a></li>
+      </ul>
+    </div>
+
+  </header>
 
   <main id="main">
     <section id="visual" class="main__wrapper --visual">
@@ -30,17 +46,156 @@
 
         <div class="main__box">
           <h2 class="--blind">visual</h2>
-          <p class="box__txt">Yoona Park</p>
-          <p class="box__txt --left">Publishing</p>
-          <p class="box__txt">For the web</p>
-          <p class="box__txt --left">3 years of building</p>
-          <p class="box__txt">things that</p>
-          <p class="box__txt --left">just work</p>
+          <p class="box__txt"><span>Yoona Park</span></p>
+          <p class="box__txt --left"><span>Publishing</span></p>
+          <p class="box__txt"><span>For the web</span></p>
+          <p class="box__txt --left"><span>3 years of building</span></p>
+          <p class="box__txt"><span>things that</span></p>
+          <p class="box__txt --left"><span>just work</span></p>
 
           <div class="box__circle"></div>
         </div>
       </div>
     </section>
+    <section id="projects" class="main__wrapper --projects">
+      <div class="projects__letter">
+        <div class="letter__swiper --01">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide --no-select">SELECTED WORKS</div>
+              <div class="swiper-slide --no-select">SELECTED WORKS</div>
+              <div class="swiper-slide --no-select">SELECTED WORKS</div>
+              <div class="swiper-slide --no-select">SELECTED WORKS</div>
+              <div class="swiper-slide --no-select">SELECTED WORKS</div>
+              <div class="swiper-slide --no-select">SELECTED WORKS</div>
+              <div class="swiper-slide --no-select">SELECTED WORKS</div>
+            </div>
+          </div>
+        </div>
+        <div class="letter__swiper --02">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide --no-select">FROM RECENT YEARS</div>
+              <div class="swiper-slide --no-select">FROM RECENT YEARS</div>
+              <div class="swiper-slide --no-select">FROM RECENT YEARS</div>
+            </div>
+          </div>
+        </div>
+        <div class="letter__swiper --03">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide --no-select">BUILT FOR THE WEB</div>
+              <div class="swiper-slide --no-select">BUILT FOR THE WEB</div>
+              <div class="swiper-slide --no-select">BUILT FOR THE WEB</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__container">
+        <div class="main__title">Projects</div>
+        <div class="main__box --01">
+          <div class="box__top">Client Project (NDA)</div>
+          <div class="box__img">
+            <div class="img__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/img/projects/01/p_01.jpg" alt="Corporate Website"></div>
+                <div class="swiper-slide"><img src="/img/projects/01/p_02.jpg" alt="Corporate Website"></div>
+                <div class="swiper-slide"><img src="/img/projects/01/p_03.jpg" alt="Corporate Website"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box__bottom">
+            <div class="bottom__left">Corporate Website — Full Build</div>
+            <div class="bottom__right">Role: Web Publishing (100%)</div>
+          </div>
+
+          <div class="box__noti">
+            전 회사 공식 웹사이트 메인 페이지 작업<br>
+            그누보드 기반으로 회사 포트폴리오 리스트 구조를 설계하고<br>
+            메인 페이지 전반을 직접 퍼블리싱했습니다.
+          </div>
+
+        </div>
+        <div class="main__box --02">
+          <div class="box__top">Medical Website Client Work (NDA)</div>
+          <div class="box__img">
+            <img src="/img/projects/02/p_01.gif" alt="Corporate Website">
+          </div>
+
+          <div class="box__bottom">
+            <div class="bottom__left">Main Page Build </div>
+            <div class="bottom__right">Markup & Publishing</div>
+          </div>
+          <div class="box__noti">다수의 병원 클라이언트 메인 페이지 작업 경험 <br>메인 페이지 구축을 중심으로, <br>관리자 페이지 관리 및 데이터 운영을 함께 담당했습니다. <br>일부 프로젝트에서는 그누보드 기반 관리자 페이지를 직접 구축했습니다.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="main__wrapper --about">
+      <div class="about__title --ta-c">
+        <h2>ABOUT ME</h2>
+        <p>Building digital experiences that simply work</p>
+      </div>
+      <div class="about__txt">
+        <div class="txt__container --01 --ta-c">
+          구조와 흐름을 중요하게 생각하며 안정적으로 작동하는 화면을 만듭니다.
+        </div>
+
+        <div class="txt__container --02 --ta-c">
+          기업 및 병원 웹사이트를 중심으로<br>
+          3년간 실무 퍼블리싱을 경험했습니다.<br><br>
+
+          메인 페이지 구축을 주로 담당했으며,<br>
+          관리자 페이지 관리와 데이터 운영까지
+          함께 수행해왔습니다.
+        </div>
+
+        <ul class="txt__container --list">
+          <li>
+            <dl>
+              <dt>What I Do</dt>
+              <dd><span>HTML / CSS 기반 시멘틱 마크업</span></dd>
+              <dd><span>반응형 웹 및 크로스 브라우징 대응</span></dd>
+              <dd><span>기업·병원 웹사이트 메인 페이지 퍼블리싱</span></dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>Project Experience</dt>
+              <dd><span>병원 및 기업 웹사이트 메인 페이지 다수 구축</span></dd>
+              <dd><span>디자인 시안 기반 UI 구현 및 인터랙션 적용</span></dd>
+              <dd><span>반복 프로젝트를 통한 구조화된 마크업 경험</span></dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>Admin & Operation</dt>
+              <dd><span>관리자 페이지 관리 및 콘텐츠 운영</span></dd>
+              <dd><span>PHP · MySQL 기반 환경에서 데이터 구조 이해</span></dd>
+              <dd><span>아이콘, 콘텐츠 목록, 노출 순서 관리 경험</span></dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>CMS & System</dt>
+              <dd><span>그누보드 기반 관리자 페이지 구축 경험</span></dd>
+              <dd><span>CMS 환경에 맞춘 퍼블리싱 및 구조 설계</span></dd>
+              <dd><span>운영을 고려한 화면 구성 및 유지보수 대응</span></dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>Working Style</dt>
+              <dd><span>유지보수와 협업을 고려한 코드 작성</span></dd>
+              <dd><span>실제 운영 환경을 우선으로 생각하는 퍼블리싱</span></dd>
+              <dd><span>보이지 않는 구조까지 신경 쓰는 작업 방식</span></dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+    </section>
+
 
     <section id="resume" class="main__wrapper --resume">
       <div class="main__container">
@@ -95,78 +250,26 @@
       </div>
     </section>
 
-    <section id="projects" class="main__wrapper --projects">
-      <div class="projects__letter">
-        <div class="letter__swiper --01">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">SELECTED WORKS</div>
-              <div class="swiper-slide">SELECTED WORKS</div>
-              <div class="swiper-slide">SELECTED WORKS</div>
-              <div class="swiper-slide">SELECTED WORKS</div>
-              <div class="swiper-slide">SELECTED WORKS</div>
-              <div class="swiper-slide">SELECTED WORKS</div>
-              <div class="swiper-slide">SELECTED WORKS</div>
-            </div>
-          </div>
-        </div>
-        <div class="letter__swiper --02">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">FROM RECENT YEARS</div>
-              <div class="swiper-slide">FROM RECENT YEARS</div>
-              <div class="swiper-slide">FROM RECENT YEARS</div>
-            </div>
-          </div>
-        </div>
-        <div class="letter__swiper --03">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">BUILT FOR THE WEB</div>
-              <div class="swiper-slide">BUILT FOR THE WEB</div>
-              <div class="swiper-slide">BUILT FOR THE WEB</div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section id="contact" class="main__wrapper --contact">
       <div class="main__container">
-        <div class="main__title">Projects</div>
-        <div class="main__box">
-          <a href="https://ist-design.co.kr/" target="_blank">
-            <span class="box__img">
-              <img src="/img/projects/ist.jpg" alt="아이에스티웹">
-            </span>
-
-            <span></span>
-          </a>
-        </div>
-        <div class="main__box">
-          <h2 class="--blind">visual</h2>
-          <p class="box__txt">Yoona Park</p>
-          <p class="box__txt --left">Publishing</p>
-          <p class="box__txt">For the web</p>
-          <p class="box__txt --left">3 years of building</p>
-          <p class="box__txt">things that</p>
-          <p class="box__txt --left">just work</p>
-
-          <div class="box__circle"></div>
-        </div>
-        <div class="main__box">
-          <h2 class="--blind">visual</h2>
-          <p class="box__txt">Yoona Park</p>
-          <p class="box__txt --left">Publishing</p>
-          <p class="box__txt">For the web</p>
-          <p class="box__txt --left">3 years of building</p>
-          <p class="box__txt">things that</p>
-          <p class="box__txt --left">just work</p>
-
-          <div class="box__circle"></div>
-        </div>
+        <h2>Get In Touch</h2>
+        <ul class="contact__container">
+          <li>Email : <a href="mailto:yoonalalaov@gmail.com">yoonalalaov@gmail.com</a></li>
+          <li>Phone : <a href="tel:+821094881893">010-9488-1893</a></li>
+          <li>GitHub : <a href="https://github.com/yoonalalaov" target="_blank">github.com/yoonalalaov</a></li>
+        </ul>
       </div>
     </section>
+
+    <section id="animation" class="main__wrapper --animation">
+
+    </section>
+
   </main>
 
 
   <script src="/js/main.js"></script>
+
+  <script src="/js/common.js"></script>
 </body>
 </html>

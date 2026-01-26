@@ -49,4 +49,22 @@
 
 .--fw-bold {
   font-weight: bold;
+}
+
+.--no-select {
+  -webkit-user-select: none; /* Chrome, Safari */
+  -moz-user-select: none; /* Firefox */ /* IE/Edge */
+  user-select: none; /* Standard */
+}
+
+.--ta-c {
+  text-align: center;
+}
+
+.--ta-l {
+  text-align: left;
+}
+
+.--ta-r {
+  text-align: right;
 }/*# sourceMappingURL=layout.css.map */
