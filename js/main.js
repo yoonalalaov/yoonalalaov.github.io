@@ -156,43 +156,105 @@ let projects__swiper = new Swiper(
 );
 
 
-// /* ==================== resume ==================== */
-// const el_resume = $("#resume");
-// const tl_resume = gsap.timeline({
-// 	scrollTrigger: {
-// 		trigger: "#resume",
-// 		start: "-20% 50%",
-// 		end: "50% 50%",
-// 		scrub: 5,
-// 	},
-// });
-
-// tl_resume
-// .from(el_resume.find(".main__container > *"), {
-//     y: 50,
-//     opacity: 0,
-//     stagger: 0.1,
-// })
 
 
+/* ==================== about ==================== */
+const el_about = $("#about");
+const tl_about = gsap.timeline({
+	scrollTrigger: {
+		trigger: "#about .about__title",
+		start: "-20% 50%",
+		end: "50% 50%",
+		scrub: 5,
+	},
+});
 
-// /* ==================== contact ==================== */
-// const el_contact = $("#contact");
-// const tl_contacts = gsap.timeline({
-// 	scrollTrigger: {
-// 		trigger: "#contact",
-// 		start: "-20% 50%",
-// 		end: "50% 50%",
-// 		scrub: 5,
-// 	},
-// });
+tl_about
+.from(el_about.find(".about__title > *"), {
+    y: 50,
+    opacity: 0,
+    stagger: 0.1,
+})
+const tl_about_2 = gsap.timeline({
+	scrollTrigger: {
+		trigger: "#about .about__txt",
+		start: "-20% 50%",
+		end: "50% 50%",
+		scrub: 5,
+	},
+});
 
-// tl_contacts
-// .from(el_contact.find(".main__container > *"), {
-//     y: 50,
-//     opacity: 0,
-//     stagger: 0.1,
-// })
+tl_about_2
+.from(el_about.find(".about__txt > *"), {
+    y: 50,
+    opacity: 0,
+    stagger: 0.1,
+})
+
+
+
+
+/* ==================== work ==================== */
+const el_work = $("#work");
+const tl_work = gsap.timeline({
+	scrollTrigger: {
+		trigger: "#work",
+		start: "-20% 50%",
+		end: "50% 50%",
+		scrub: 5,
+	},
+});
+
+tl_work
+.from(el_work.find("h2"), {
+    y: 50,
+    opacity: 0,
+    stagger: 0.1,
+})
+.from(el_work.find(".work__item"), {
+    y: 50,
+    opacity: 0,
+    stagger: 0.1,
+}, '<.2')
+
+
+/* ==================== resume ==================== */
+const el_resume = $("#resume");
+const tl_resume = gsap.timeline({
+	scrollTrigger: {
+		trigger: "#resume",
+		start: "-20% 50%",
+		end: "50% 50%",
+		scrub: 5,
+	},
+});
+
+tl_resume
+.from(el_resume.find(".main__container > *"), {
+    y: 50,
+    opacity: 0,
+    stagger: 0.1,
+})
+
+
+
+/* ==================== contact ==================== */
+const el_contact = $("#contact");
+const tl_contacts = gsap.timeline({
+	scrollTrigger: {
+		trigger: "#contact",
+		start: "-20% 50%",
+		end: "50% 50%",
+		scrub: 5,
+	},
+});
+
+tl_contacts
+.from(el_contact.find(".main__container > *"), {
+    y: 50,
+    opacity: 0,
+    stagger: 0.1,
+})
 
 
 function goTo(to){
