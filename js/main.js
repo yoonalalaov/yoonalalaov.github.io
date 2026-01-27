@@ -145,43 +145,43 @@ let projects__swiper = new Swiper(
 );
 
 
-/* ==================== resume ==================== */
-const el_resume = $("#resume");
-const tl_resume = gsap.timeline({
-	scrollTrigger: {
-		trigger: "#resume",
-		start: "-20% 50%",
-		end: "50% 50%",
-		scrub: 5,
-	},
-});
+// /* ==================== resume ==================== */
+// const el_resume = $("#resume");
+// const tl_resume = gsap.timeline({
+// 	scrollTrigger: {
+// 		trigger: "#resume",
+// 		start: "-20% 50%",
+// 		end: "50% 50%",
+// 		scrub: 5,
+// 	},
+// });
 
-tl_resume
-.from(el_resume.find(".main__container > *"), {
-    y: 50,
-    opacity: 0,
-    stagger: 0.1,
-})
+// tl_resume
+// .from(el_resume.find(".main__container > *"), {
+//     y: 50,
+//     opacity: 0,
+//     stagger: 0.1,
+// })
 
 
 
-/* ==================== contact ==================== */
-const el_contact = $("#contact");
-const tl_contacts = gsap.timeline({
-	scrollTrigger: {
-		trigger: "#contact",
-		start: "-20% 50%",
-		end: "50% 50%",
-		scrub: 5,
-	},
-});
+// /* ==================== contact ==================== */
+// const el_contact = $("#contact");
+// const tl_contacts = gsap.timeline({
+// 	scrollTrigger: {
+// 		trigger: "#contact",
+// 		start: "-20% 50%",
+// 		end: "50% 50%",
+// 		scrub: 5,
+// 	},
+// });
 
-tl_contacts
-.from(el_contact.find(".main__container > *"), {
-    y: 50,
-    opacity: 0,
-    stagger: 0.1,
-})
+// tl_contacts
+// .from(el_contact.find(".main__container > *"), {
+//     y: 50,
+//     opacity: 0,
+//     stagger: 0.1,
+// })
 
 
 function goTo(to){

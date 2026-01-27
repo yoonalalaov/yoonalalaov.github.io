@@ -222,6 +222,39 @@
                 }
                 */
 
+                &.--03 {
+                    width: auto;
+
+                    .box__img {
+                        display: flex;
+
+                        img {
+                            width: 100%;
+                        }
+                        
+                        .img__item {
+                            height: 50vh;
+                            overflow: hidden;
+             
+
+                            img {
+                                transition: transform 6s linear;
+                            }
+
+                            &:hover img {
+                                transform: translateY(-80%);
+                            }
+
+
+                            &:not(:last-child) {
+                                margin-right: .3em;
+                            }
+
+                        }
+                    }
+
+                }
+
 
 
 
@@ -344,6 +377,46 @@
 
     }
     // --about E
+
+    // --work S
+    .--work {
+
+        h2 {
+            position: sticky;
+            left: 0;
+            top: 2em;
+            font-size: 18px;
+            opacity: .6;
+        }
+
+        .work__item {
+
+            .item__box {
+                padding: 2em 0;
+
+                &:not(:last-child) {
+
+                    border-bottom: 1px solid rgba(0,0,0,0.2);
+                }
+
+                .box__title {
+                    font-size: 24px;
+                    display: block;
+
+                    padding-bottom: .3em;
+                }
+
+                .box__txt {
+                    opacity: .6;
+                }
+
+            }
+
+        }
+
+
+    }
+    // --work E
 
     // --resume S
     .--resume {
