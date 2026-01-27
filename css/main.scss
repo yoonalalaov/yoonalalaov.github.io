@@ -4,6 +4,8 @@
     background: #ece8e2;
 
 
+
+
     .main__wrapper {
         position: relative;
         display: flex;
@@ -467,29 +469,10 @@
                     font-size: 18px;
 
                     display: block;
-                    padding-bottom: .1em;
+                    padding-bottom: .4em;
                 }
 
-                .ul__txt {
-
-                    .txt__circle {
-
-                    }
-
-                    dl {
-
-                        dt {
-
-                        }
-
-                        dd {
-
-                        }
-
-                    }
-                    
-
-                }
+            
 
                 .ul__img {
                     display: flex;
@@ -518,7 +501,7 @@
 
     // --contact S
     .--contact {
-        padding: 100px 0 65px;
+        padding: 70px 0 30px;
 
 
         .main__container {
@@ -622,6 +605,27 @@
         margin: 0 auto;
     }
 
+    #main .--resume .main__container {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    #main .--resume .box__ul {
+        display: block;
+    }
+
+    #main .--resume .box__ul > li {
+        width: 100%!important;
+    }
+
+    #main .--resume .main__container .main__box {
+        width: 100%;
+    }
+
+    #main .--contact .main__container {
+        width: 83%;
+    }
+
 }
 
 // 900px media
@@ -652,9 +656,59 @@
 
 
 
+    #main .main__wrapper .main__title {
+        font-size: clamp(18px, 3vw, 20px);
+    }
+
+
+    #main .--projects .main__container .main__box.--03 .box__img .img__item {
+        height: 40vh;
+    }
 
     #main .--about .about__txt .txt__container.--list > li {
         width: 100%;
+    }
+
+    #main .--projects .main__container .main__box .box__bottom {
+        font-size: clamp(18px, 3vw, 22px);
+
+    }
+
+    #main .--about .about__txt .txt__container.--01 {
+        font-size: clamp(20px, 3.4vw, 22px);
+
+    }
+
+    #main .--resume .box__ul > li .ul__img {
+        flex-wrap: wrap;
+    }
+
+    #main .--resume .box__ul > li .ul__img li {
+        width: 10%;
+
+        margin-bottom: 1em;
+    }
+
+    #main .--contact .main__container {
+        display: block;
+    }
+
+    #main .--contact .main__container h2 {
+        padding-bottom :.3em;
+    }
+
+    #main .--contact .main__container > *:not(:last-child) {
+        width: 100%;
+    }
+    
+}
+
+
+// 640px
+@media(max-width: 640px) {
+
+    #main .--work .main__container {
+        padding: 0 1em;
     }
 
 }
