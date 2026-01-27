@@ -392,7 +392,7 @@
     margin: 0 auto;
   }
   #main .--resume .main__container {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
   }
   #main .--resume .box__ul {
@@ -405,7 +405,7 @@
     width: 100%;
   }
   #main .--contact .main__container {
-    width: 83%;
+    width: 90%;
   }
 }
 @media (max-width: 900px) {
@@ -458,5 +458,11 @@
 @media (max-width: 640px) {
   #main .--work .main__container {
     padding: 0 1em;
+  }
+  #main .main__wrapper .main__box {
+    padding: 6vw;
+  }
+  #main .--visual .main__box .box__txt.--left {
+    margin-left: 5vw;
   }
 }/*# sourceMappingURL=main.css.map */

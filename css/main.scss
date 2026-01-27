@@ -606,7 +606,7 @@
     }
 
     #main .--resume .main__container {
-        width: 85%;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -623,7 +623,7 @@
     }
 
     #main .--contact .main__container {
-        width: 83%;
+        width: 90%;
     }
 
 }
@@ -709,6 +709,14 @@
 
     #main .--work .main__container {
         padding: 0 1em;
+    }
+
+    #main .main__wrapper .main__box {
+        padding: 6vw;
+    }
+
+    #main .--visual .main__box .box__txt.--left {
+        margin-left: 5vw;
     }
 
 }
