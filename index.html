@@ -38,19 +38,37 @@
 <body>
   <h1 class="--blind">Yoona Park — Web Publisher Portfolio</h1>
   <header id="hd">
-    <h1 class="hd__logo --blind"><a href="/">Yoona PortFolio</a></h1>
-    <div class="hd__menu">
-      <ul>
-        <li><a href="javascript:goToEle('#visual')">Yoona</a></li>
-        <li><a href="javascript:goToEle('#projects')">Projects</a></li>
-        <li><a href="javascript:goToEle('#about')">About</a></li>
-        <li><a href="javascript:goToEle('#work')">How</a></li>
-        <li><a href="javascript:goToEle('#resume')">Resume</a></li>
-        <li><a href="javascript:goToEle('#contact')">Contact</a></li>
-      </ul>
+    <div class="--pc">
+
+      <h1 class="hd__logo --blind"><a href="/">Yoona PortFolio</a></h1>
+      <div class="hd__menu">
+        <ul>
+          <!-- <li><a href="javascript:goToEle('#visual')">Yoona</a></li> -->
+          <li><a href="javascript:goToEle('#projects')">Projects</a></li>
+          <li><a href="javascript:goToEle('#about')">About</a></li>
+          <li><a href="javascript:goToEle('#work')">How</a></li>
+          <li><a href="javascript:goToEle('#resume')">Resume</a></li>
+          <li><a href="javascript:goToEle('#contact')">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="--mob">
+      <button type="button" id="mob__btn">MENU</button>
     </div>
 
   </header>
+
+  <div id="gnb" class="--mob">
+    <nav>
+      <div class="gnb__item"><a href="javascript:goToEle('#projects')">Projects</a></div>
+      <div class="gnb__item"><a href="javascript:goToEle('#about')">About</a></div>
+      <div class="gnb__item"><a href="javascript:goToEle('#work')">How</a></div>
+      <div class="gnb__item"><a href="javascript:goToEle('#resume')">Resume</a></div>
+      <div class="gnb__item"><a href="javascript:goToEle('#contact')">Contact</a></div>
+    </nav>
+  </div>
+
 
   <main id="main">
     <section id="visual" class="main__wrapper --visual">

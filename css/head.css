@@ -3,10 +3,10 @@
   position: fixed;
   left: 0;
   top: 0;
-  padding: 0 30px;
+  padding: 1em;
   display: flex;
-  justify-content: space-between;
-  z-index: 9;
+  justify-content: flex-end;
+  z-index: 999;
   opacity: 1;
   top: 0;
   transition: 1s;
@@ -17,24 +17,94 @@
   top: -150px;
   transition: opacity 0.5s 0.2s, top 1s 0.2s ease;
 }
-#hd .hd__menu {
+#hd .--pc {
   width: 100%;
-  padding: 1em;
 }
-#hd .hd__menu ul {
+#hd .--pc .hd__menu {
+  width: 100%;
+}
+#hd .--pc .hd__menu ul {
   display: flex;
   justify-content: flex-end;
 }
-#hd .hd__menu ul li:not(:last-child) {
+#hd .--pc .hd__menu ul li:not(:last-child) {
   margin-right: 2.5em;
 }
-#hd .hd__menu ul li a {
+#hd .--pc .hd__menu ul li a {
   font-size: 20px;
   border-radius: 3px;
   padding: 0.1em 0.3em;
   transition: all 0.3s ease;
 }
-#hd .hd__menu ul li a:hover {
+#hd .--pc .hd__menu ul li a:hover {
   background: #a6814c;
   color: #fff;
+}
+#hd .--mob {
+  display: none;
+}
+
+#gnb.--mob {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  height: calc(var(--vh, 1vh) * 100);
+  background: rgba(255, 255, 255, 0.6666666667);
+  transition: 0.8s;
+  opacity: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+#gnb.--mob nav {
+  width: 100%;
+  height: 100%;
+  font-size: clamp(35px, 9.5vw, 55px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 70px 0.4em;
+  background: #171010;
+  color: #ebe3d7;
+  overflow-y: auto;
+  position: relative;
+  top: 50%;
+  transition: 0.8s;
+}
+#gnb.--mob nav a {
+  font-weight: 300;
+}
+#gnb.--mob.--active {
+  opacity: 1;
+  pointer-events: all;
+}
+#gnb.--mob.--active nav {
+  top: 0;
+}
+
+@media (max-width: 640px) {
+  #hd .--pc {
+    display: none;
+  }
+  #hd .--mob {
+    display: block;
+    z-index: 999;
+  }
+  #hd .--mob #mob__btn {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1;
+    border-radius: 4px;
+    padding: 0.1em 0.2em;
+    background: #171010;
+    color: #ebe3d7;
+    transition: all 0.3s ease;
+  }
+  #hd .--mob #mob__btn.--active {
+    color: #171010;
+    background: #ebe3d7;
+  }
 }/*# sourceMappingURL=head.css.map */

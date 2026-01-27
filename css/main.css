@@ -465,4 +465,17 @@
   #main .--visual .main__box .box__txt.--left {
     margin-left: 5vw;
   }
+  #main .--about {
+    padding-top: 100px;
+  }
+  #main .--about .about__title {
+    top: -50px;
+  }
+  #main .--about .about__txt {
+    padding: 10em 1em 0;
+    word-break: keep-all;
+  }
+  #main .--work .work__item .item__box .box__txt {
+    word-break: keep-all;
+  }
 }/*# sourceMappingURL=main.css.map */

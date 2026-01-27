@@ -14,3 +14,30 @@ if (currentScroll > lastScroll && currentScroll > 50) {
 
 lastScroll = currentScroll;
 });
+
+$('#mob__btn').on('click', function(){
+  $('#mob__btn, #gnb.--mob').toggleClass('--active')
+
+
+  if($(this).hasClass('--active')){
+    $(this).text('CLOSE')
+  } else {
+    $(this).text('MENU')
+  }
+})
+
+$(document).keydown(function(event) {
+    if ( event.keyCode == 27 || event.which == 27 ) {
+        // esc 입력
+        $('#mob__btn, #gnb.--mob').removeClass('--active')
+    $('#mob__btn').text('MENU')
+    }
+});
+
+
+$(function(){
+    $('#gnb .gnb__item a').on('click', function(){
+        $('#mob__btn, #gnb.--mob').removeClass('--active')
+    $('#mob__btn').text('MENU')
+    })
+})
