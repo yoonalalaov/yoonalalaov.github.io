@@ -26,6 +26,9 @@
 #main .main__wrapper .main__box.--wide {
   width: 100%;
 }
+#main .--visual .main__box {
+  overflow: hidden;
+}
 #main .--visual .main__box .box__txt {
   z-index: 2;
   overflow: hidden;
@@ -65,8 +68,8 @@
   animation-delay: 0.7s;
 }
 #main .--visual .main__box .box__circle {
-  width: 60%;
   height: 100%;
+  aspect-ratio: 1/1;
   background: var(--yellow);
   border-radius: 50%;
   position: absolute;
@@ -161,22 +164,27 @@
 }
 #main .--projects .main__container .main__box.--03 .box__img {
   display: flex;
-}
-#main .--projects .main__container .main__box.--03 .box__img img {
-  width: 100%;
+  flex-wrap: wrap;
+  gap: 0.3em;
 }
 #main .--projects .main__container .main__box.--03 .box__img .img__item {
+  flex: 1;
   height: 50vh;
-  overflow: hidden;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  cursor: ns-resize;
 }
 #main .--projects .main__container .main__box.--03 .box__img .img__item img {
-  transition: transform 6s linear;
+  width: 100%;
+  display: block;
+  height: auto;
 }
-#main .--projects .main__container .main__box.--03 .box__img .img__item:hover img {
-  transform: translateY(-80%);
-}
-#main .--projects .main__container .main__box.--03 .box__img .img__item:not(:last-child) {
-  margin-right: 0.3em;
+#main .--projects .main__container .main__box.--03 .box__img .img__txt {
+  width: 100%;
+  font-size: 12px;
+  opacity: 0.3;
 }
 #main .--about {
   padding-top: 200px;
@@ -194,6 +202,7 @@
 #main .--about .about__title h2 {
   font-size: 130px;
   font-stretch: extra-expanded;
+  white-space: nowrap;
   line-height: 1;
   transform: scaleY(2);
   padding-top: 0.3em;
@@ -222,7 +231,7 @@
   padding-top: 2em;
 }
 #main .--about .about__txt .txt__container.--list > li {
-  width: 33%;
+  width: 33.33%;
   padding-top: 3em;
 }
 #main .--about .about__txt .txt__container.--list > li dl dt {
@@ -251,6 +260,17 @@
   top: 2em;
   font-size: 18px;
   opacity: 0.6;
+  display: flex;
+  align-items: center;
+}
+#main .--work h2:before {
+  content: "";
+  width: 0.3em;
+  height: 0.3em;
+  border-radius: 50%;
+  background: #a6814c;
+  display: block;
+  margin-right: 0.3em;
 }
 #main .--work .work__item .item__box {
   padding: 2em 0;
@@ -348,5 +368,46 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@media (max-width: 1024px) {
+  #main .main__wrapper .main__box {
+    width: 73%;
+  }
+  #main .--visual .main__container {
+    width: 100%;
+  }
+  #main .--visual .main__box {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  #main .--visual .main__box .box__txt span {
+    font-size: clamp(35px, 6.5vw, 55px);
+  }
+  #main .--projects .main__container {
+    width: 90%;
+  }
+  #main .--about .about__txt .txt__container.--list {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 900px) {
+  #main .main__wrapper .main__box {
+    width: 100%;
+  }
+  #main .--projects .projects__letter .letter__swiper {
+    font-size: clamp(35px, 12vw, 140px);
+  }
+  #main .--about .about__title h2 {
+    font-size: clamp(35px, 14vw, 122px);
+  }
+  #main .--about .about__txt .txt__container.--list > li {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  #main .--about .about__txt .txt__container.--list > li {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

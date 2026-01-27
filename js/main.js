@@ -49,18 +49,28 @@ const scroll = new Scrooth({
 });
 */
 
-  // Lenis 초기화
-  const lenis = new Lenis({
-    duration: 1.2, // 스크롤 속도
-    easing: t => t, // easing 함수 (linear)
-    smooth: true,
-  });
+/*
+const lenis = new Lenis({
+  duration: 1.2,
+  easing: t => t,
+  smooth: true,
 
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
+  // ✅ 내부 스크롤 영역에서는 Lenis가 이벤트를 무시하게
+  prevent: (node) => {
+    return (
+      node.closest?.('.lenis-prevent') ||
+      node.closest?.('[data-lenis-prevent]') ||
+      node.closest?.('.img__item') // 필요하면 이 줄은 유지, 아니면 지워
+    );
+  },
+});
+
+function raf(time) {
+  lenis.raf(time);
   requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+
 
   // 앵커 링크 클릭 부드럽게 이동
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -72,6 +82,7 @@ const scroll = new Scrooth({
       }
     });
   });
+  */
 
 
 
