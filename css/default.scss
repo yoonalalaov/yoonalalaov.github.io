@@ -11,11 +11,35 @@ html, body {
 }
 
 body {
-  font-family: Inter, Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
+   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #111;
   background-color: #fff;
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c7c7c7;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8a8a8;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c7c7c7 transparent;
 }
 
 h1, h2, h3, h4, h5, h6 {
